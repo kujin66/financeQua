@@ -4,3 +4,7 @@
 python 1_feature_engineering.py
 
 python 2_set_labels.py
+
+第二步：构建模型
+
+（1）采用SVR模型预测
