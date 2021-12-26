@@ -82,8 +82,6 @@ def train_val_features(csv_reader, feat_day=5, pred_day=1, feature_name='ticker_
     for i in range(len(csv_reader)):
         price_mean_list = csv_reader[feature_name][i]
         for j in range(len(price_mean_list) - 6):
-            if num > 5000:
-                break
             feature_list = []
             for k in range(feat_day):
                 feature_list.append(price_mean_list[j+k])
